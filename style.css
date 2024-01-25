@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root {
+    --font: 'Montserrat', sans-serif;
+    --maxsize: 1104px;
+
+    --white: #fff;
+    --lightgrey: #E1E5EE;
+    --darkblue: #2A324B; 
+
+}
+
+body {
+    font-family: var(--font);
+    background-color: var(--lightgrey);
+    margin-top:5rem;
+
+}
+#container {
+    width:100%;
+    max-width: var(--maxsize);
+    background-color: var(--white);
+    margin: 0 auto;
+
+    
+
+}
+main {
+    padding: 3rem;
+}
+
+main ul {
+    
+    display: flex;
+    flex-direction: column;
+    gap:0;
+
+}
+
+
+ul {
+    
+    padding: 0;
+    display:flex;
+    gap: 1rem;
+    margin-bottom:0;
+}
+nav {
+    display:flex;
+    justify-content: center;
+    background-color: var(--lightgrey);
+    
+}
+nav li {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--darkblue);
+    padding: 1.5rem;
+    width: 10rem;
+    height: 1rem;
+    
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: var(--darkblue);
+}
+/* CSS for bakgrunnsfargene på linkene */
+nav li:not(.active) {
+    background-color: var(--darkblue);
+    
+}
+
+nav li:not(.active) a {
+    color: var(--white); 
+}
+
+nav li.active {
+    background-color: var(--white);
+}
+nav li a.active {
+    color: var(--darkblue);
+}
